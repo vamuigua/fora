@@ -11,11 +11,10 @@
         <label for="content">Question</label>
         {{input value=content id="content"}}
       </div>
-
       <button {{action 'saveQuestion1'}}>Post Question</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+  <button {{action 'questionFormShow'}}>Ask a Question</button>
 {{/if}}
 {{yield}}
