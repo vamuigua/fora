@@ -1,8 +1,10 @@
 <h2>Welcome to Fora!</h2>
+
+<h3>What's your Question....Ask anything!</h3>
+
 <ul>
   {{#each model as |question|}}
-    <p>{{question.content}}</p>
-    <p>{{question.author}}</p>
+  {{question-tile question=question}}
   {{/each}}
 </ul>
 
