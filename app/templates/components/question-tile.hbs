@@ -1,6 +1,3 @@
-<p>{{question.content}}</p>
-<p>{{question.author}}</p>
-
-{{update-question question=question update="update"}}
+{{#link-to 'questions' question.id}}{{question.author}}<br> {{question.content}}{{/link-to}}
 
 {{yield}}
