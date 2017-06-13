@@ -1,4 +1,11 @@
 <h3>By: {{question.author}}</h3>
 <h2>{{question.content}}</h2>
 
+<h2> Answer </h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 {{yield}}
