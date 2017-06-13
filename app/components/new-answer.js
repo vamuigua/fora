@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewAnswer: false,
   actions: {
+    cancelAnswerForm(){
+      this.set('addNewAnswer',false)
+    },
     answerFormShow() {
       this.set('addNewAnswer', true);
     },

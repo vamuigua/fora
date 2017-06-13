@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   updateQuestionForm: false,
   actions: {
+    cancelUpdateForm(){
+      this.set('updateQuestionForm',false);
+    },
     updateQuestionForm() {
       this.set('updateQuestionForm', true);
     },

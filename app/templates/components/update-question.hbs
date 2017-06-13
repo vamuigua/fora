@@ -11,11 +11,12 @@
         <label for="content">Question</label>
         {{input value=content id="content" placeholder=question.content}}
       </div>
-      <button {{action 'update' question}}>Save</button>
+      <button type="button" class="btn btn-success"{{action 'update' question}}>Save</button>
+      <button type="button" class="btn btn-danger" {{action 'cancelUpdateForm'}}>Cancel</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update Question</button>
+  <button type="button" class="btn btn-primary" {{action 'updateQuestionForm'}}>Update Question</button>
 {{/if}}
 
 {{yield}}
