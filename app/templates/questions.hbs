@@ -1,7 +1,9 @@
 <h2>Questions</h2>
 
+{{update-question question=model update="update"}}
+
 {{question-details question=model}}
 
-{{update-question question=model update="update"}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
 
 {{outlet}}
