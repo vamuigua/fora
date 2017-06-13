@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewQuestion: false,
   actions: {
+    cancelForm(){
+      this.set('addNewQuestion',false);
+    },
     questionFormShow() {
       this.set('addNewQuestion', true);
     },
