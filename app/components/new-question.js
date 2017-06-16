@@ -14,7 +14,10 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
+        createDate:new Date(),
       };
+      this.set('author',null);
+      this.set('content',null);
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion2', params);
     }
