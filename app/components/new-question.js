@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
-        createDate:new Date(),
+        postedDate: new Date()
       };
       this.set('author',null);
       this.set('content',null);
