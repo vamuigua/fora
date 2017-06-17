@@ -5,4 +5,5 @@ export default DS.Model.extend({
   content:DS.attr(),
   answers: DS.hasMany('answer', { async: true }),
   postedDate:DS.attr('date'),
+  // totalVotes: DS.attr(),
 });
