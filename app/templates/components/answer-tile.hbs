@@ -1,3 +1,8 @@
-<li>{{answer.content}}<br> By: {{answer.author}} <br>Posted on: <em>{{answer.answeredDate}}</em> <hr></li>
+<li>{{answer.content}}<br> By: {{answer.author}} <br>Posted on: <em>{{answer.answeredDate}}</em></li>
+<br>
+<button class="btn btn-success"{{action 'upVote' question}}>Upvote</button>
+<button class="btn btn-danger"{{action 'downVote' question}}>Downvote</button>
+{{question.totalVotes}}
+<hr>
 
 {{yield}}
